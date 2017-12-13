@@ -1,0 +1,23 @@
+
+body {
+    background-color: #f7efb9;
+}
+
+
+ .container {
+ 	text-align: center;
+ }
+
+
+ #heading {
+ 	background-color: #ccaae2;
+ 	padding-top: 50px;
+ 	padding-bottom: 50px;
+ 	text-align: center;
+ }
+
+ #main-content {
+ 	background-color: #ccaae2;
+ 	margin-top: 20px;
+ 	padding: 40px;
+ }
