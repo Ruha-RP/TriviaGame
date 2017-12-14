@@ -30,6 +30,9 @@ $(document).ready(function() {
 	 		$("#show-number").html("<h3>Time's Up!</h3>");
 	 		//Stopping the excution of run function, so time doesn't go to negatives
 	 		stop();
+	 		//creating a new html element that shows the stats
+	 		$("#numCorrect").html("Correct answers: " + numCorrect);
+	 		$("#numIncorrect").html("Incorrect answers: " + numIncorrect);
 	 	}
 	};
 
@@ -39,6 +42,7 @@ $(document).ready(function() {
 	      //reset the number to 5 seconds if the player wants to restart the game
 	      number = 5;
 	};
+
 
 	//To execute the run function, when start button is clicked
     $("#start").on("click", run);
@@ -65,8 +69,8 @@ var questionBank = {
 //the number of correct variable
 var numCorrect = 0;
 
-//the number of incorrect variable
-var numIncorrect = 0;
+//the number of incorrect variable, in the beginning set as all incorrect
+var numIncorrect = 4;
 
 //
 
@@ -79,6 +83,9 @@ $("#yesOne").on("click", function() {
 	//let's test it
 	console.log("The numCorrect is" + numCorrect);
 	//when the user clicks the incorrect answer
+	numIncorrect--;
+	//let's test it
+	console.log("The numIncorrect is" + numIncorrect);
 });
 
 
@@ -89,7 +96,38 @@ $("#yesTwo").on("click", function() {
 	numCorrect++;
 	//let's test it
 	console.log("The numCorrect is" + numCorrect);
+	//when the user clicks the incorrect answer
+	numIncorrect--;
+	//let's test it
+	console.log("The numIncorrect is" + numIncorrect);
 });
+
+//when the correct answer is clicked fro question 3...
+$("#yesThree").on("click", function() {
+	//the number of correct answer increment by 1
+	numCorrect++;
+	//let's test it
+	console.log("The numCorrect is" + numCorrect);
+	//when the user clicks the incorrect answer
+	numIncorrect--;
+	//let's test it
+	console.log("The numIncorrect is" + numIncorrect);
+});
+
+
+
+//when the correct answer is clicked for question 4...
+$("#yesFour").on("click", function() {
+	//the number of correct answer increment by 1
+	numCorrect++;
+	//let's test it
+	console.log("The numCorrect is" + numCorrect);
+	//when the user clicks the incorrect answer
+	numIncorrect--;
+	//let's test it
+	console.log("The numIncorrect is" + numIncorrect);
+});
+
 
 
 });//end of .ready function
