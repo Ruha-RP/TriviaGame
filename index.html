@@ -21,7 +21,7 @@
 			<br>
 			<br>
 		</div>
-	</div>
+	</div><!-- Closing first row div -->
 
 
 	<div class="row" id="heading">
@@ -29,45 +29,53 @@
 			<h1>Trivia Game!</h1>
 			<p>Answer as many questions as you can before time runs out!<p>
 		</div>
-	</div>
+	</div><!-- Closing second row div -->
 
 	<div class="row" id="main-content">
 		<div class="col-md-10">
 
-	<!-- Creation of start button that will appear at the beginning of the game
+			<!-- Creation of a div that will show timer countdown -->
+			<div id="show-number"></div>
+
+	<!-- **Creation of start button that will appear at the beginning of the game
 			<button>START</button> -->
-	
-	<!-- Creation of form that will hold Questions and Answer options -->
-	<!-- Radio buttons will ensure that only one choice can be made -->
-			<form id="quiz-form">
-		        <label id="qOne">
-		            1. What is the capital of Tanzania?
-		          	<br>	       
-		            <input type="radio" name="choiceOne" value="nairobi">Nairobi<br>
-  					<input type="radio" name="choiceOne" value="dodoma">Dodoma<br>
-  					<input type="radio" name="choiceOne" value="kampala">Kampala
-		        </label> 
-		        <br>
-		        <br>
-		        <label id="qTwo">
-		            2. What is the capital of Kenya?
-		          	<br>	       
-		            <input type="radio" name="choiceTwo" value="nairobi">Nairobi<br>
-  					<input type="radio" name="choiceTwo" value="kinshasa">Kinshasa<br>
-  					<input type="radio" name="choiceTwo" value="cairo">Cairo
-		        </label>
-		    </form>
 
-    	</div>
-	</div>
+			<!-- Creating a start button -->
+			<div id="button">
+				<button id="start">Start Quiz</button>
+				<br>
+				<br>
+			</div><!-- Closing button div -->
+			
+			<!-- Creation of form that will hold Questions and Answer options -->
+			<!-- Radio buttons will ensure that only one choice can be made -->
+			<div class="quizContent">
+				<form id="quiz-form">
 
+				    <label id="qOne">
+				    1. What is the capital of Tanzania?
+				        <br>	       
+				        <input type="radio" name="choiceOne" value="nairobi">Nairobi<br>
+		  				<input type="radio" name="choiceOne" value="dodoma">Dodoma<br>
+		  				<input type="radio" name="choiceOne" value="kampala">Kampala
+				    </label> 
+				    <br>
+				    <br>
 
+				    <label id="qTwo">
+				    2. What is the capital of Kenya?
+				        <br>	       
+				        <input type="radio" name="choiceTwo" value="nairobi">Nairobi<br>
+		  				<input type="radio" name="choiceTwo" value="kinshasa">Kinshasa<br>
+		  				<input type="radio" name="choiceTwo" value="cairo">Cairo
+				    </label>
 
+				</form>
+    		</div><!-- Closing quiz content div -->
 
+	</div><!-- Closing main-content div -->
 
-
-
-</div>
+</div><!-- Closing container div -->
 
 
  
