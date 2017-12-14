@@ -4,6 +4,10 @@ $(document).ready(function() {
 //Hiding the form at the beginning of the game
 $(".quizContent").hide();
 
+
+
+
+
 //STEP 2: ***Creation of a countdown timer***
 
 	//Declaring the number counter variable to 5
@@ -20,6 +24,7 @@ $(".quizContent").hide();
 		intervalId =setInterval(decrement, 1000);
 		//chnage html text to previous stats after restarting the game
 		$(".stats").html("Previous Stats: ");
+
 
 	};
 
@@ -39,6 +44,8 @@ $(".quizContent").hide();
 	 		//creating a new html element that shows the stats
 	 		$("#numCorrect").html("Correct answers: " + numCorrect);
 	 		$("#numIncorrect").html("Incorrect answers: " + numIncorrect);
+	 		$("#numAnswered").html("Answered questions:  " + numAnsw);
+	 		$("#numUnanswered").html("Unanswered questions: " + numUnansw);
 	 		//changing name of previous stats to current stats
 	 		$(".stats").html("Current Stats: ");
 	 	}
@@ -81,6 +88,7 @@ var numCorrect = 0;
 
 //the number of incorrect variable, in the beginning set as all incorrect
 var numIncorrect = 5;
+
 
 
 
@@ -151,7 +159,9 @@ $("#yesFive").on("click", function() {
 });
 
 
-//4.***VISIBILITY OF FORM*** 
+
+
+//5.***VISIBILITY OF FORM*** 
 //Visible: after clicking start button
 //This code is inserted at the beginning of the page and  in the .onclick method for the start button
 //Invisible: when time's up
@@ -160,6 +170,21 @@ $("#yesFive").on("click", function() {
 
 
 
+
+//6.***DETECTING NUMBER OF QUESTIONS ANSWERED AND UNANSWERED
+
+//create variables
+var numAnsw = 0;
+
+var numUnansw = 5;
+
+//when any radio button is clicked
+$(".choice").on("click",function() {
+      //increases by 1
+      numAnsw++;
+      //decreases by 1
+      numUnansw--;
+});
 
 });//end of .ready function
 

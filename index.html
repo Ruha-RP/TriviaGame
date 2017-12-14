@@ -26,7 +26,7 @@
 
 	<div class="row" id="heading">
 		<div class="col-md-10">
-			<h1>Trivia Game!</h1>
+			<h1>The 10second Capital City Quiz!</h1>
 			<p>Answer as many questions as you can before time runs out!<p>
 		</div>
 	</div><!-- Closing second row div -->
@@ -34,11 +34,15 @@
 	<div class="row" id="main-content">
 		<div class="col-md-10">
 
-			<!-- Creation of a div that will show timer countdown -->
+		<!-- Creation of a div that will show timer countdown and scores -->
+		<div class="summary">
 			<div id="show-number"></div>
 			<div class="stats">Previous Stats: </div>
 			<div id="numCorrect"></div>
 			<div id="numIncorrect"></div>
+			<div id="numAnswered"></div>
+			<div id="numUnanswered"></div>
+		</div>
 
 
 	<!-- **Creation of start button that will appear at the beginning of the game
@@ -59,9 +63,9 @@
 				    <label id="qOne">
 				    1. What is the capital of Tanzania?
 				        <br>	       
-				        <input type="radio" name="choiceOne" value="nairobi" id="noOne1">Nairobi<br>
-		  				<input type="radio" name="choiceOne" value="dodoma" id="yesOne">Dodoma<br>
-		  				<input type="radio" name="choiceOne1" value="kampala" id="noOne2">Kampala
+				        <input type="radio" name="choiceOne" value="nairobi" id="noOne1" class="choice">Nairobi<br>
+		  				<input type="radio" name="choiceOne" value="dodoma" id="yesOne" class="choice">Dodoma<br>
+		  				<input type="radio" name="choiceOne" value="kampala" id="noOne2" class="choice">Kampala
 				    </label> 
 				    <br>
 				    <br>
@@ -69,9 +73,9 @@
 				    <label id="qTwo">
 				    2. What is the capital of Kenya?
 				        <br>	       
-				        <input type="radio" name="choiceTwo" value="nairobi" id="yesTwo">Nairobi<br>
-		  				<input type="radio" name="choiceTwo" value="kinshasa" id="noTwo1">Kinshasa<br>
-		  				<input type="radio" name="choiceTwo" value="cairo" id="noTwo2">Cairo
+				        <input type="radio" name="choiceTwo" value="nairobi" id="yesTwo" class="choice">Nairobi<br>
+		  				<input type="radio" name="choiceTwo" value="kinshasa" id="noTwo1" class="choice">Kinshasa<br>
+		  				<input type="radio" name="choiceTwo" value="cairo" id="noTwo2" class="choice">Cairo
 				    </label>
 				    <br>
 				    <br>
@@ -79,9 +83,9 @@
 				    <label id="qThree">
 				    3. What is the capital of Uganda?
 				        <br>	       
-				        <input type="radio" name="choiceThree" value="zanzibar" id="noThree1">Zanzibar<br>
-		  				<input type="radio" name="choiceThree" value="pretoria" id="noThree2">Pretoria<br>
-		  				<input type="radio" name="choceThree" value="kampala" id="yesThree">Kampala
+				        <input type="radio" name="choiceThree" value="zanzibar" id="noThree1" class="choice">Zanzibar<br>
+		  				<input type="radio" name="choiceThree" value="pretoria" id="noThree2" class="choice">Pretoria<br>
+		  				<input type="radio" name="choceThree" value="kampala" id="yesThree" class="choice">Kampala
 				    </label> 
 				    <br>
 				    <br>
@@ -89,9 +93,9 @@
 				    <label id="qFour">
 				    4. What is the capital of Egypt?
 				        <br>	       
-				        <input type="radio" name="choiceFour" value="tripoli" id="noFour1">Tripoli<br>
-		  				<input type="radio" name="choiceFour" value="cairo" id="yesFour">Cairo<br>
-		  				<input type="radio" name="choiceFour" value="alexandria" id="noFour2">Alexandria
+				        <input type="radio" name="choiceFour" value="tripoli" id="noFour1" class="choice">Tripoli<br>
+		  				<input type="radio" name="choiceFour" value="cairo" id="yesFour" class="choice">Cairo<br>
+		  				<input type="radio" name="choiceFour" value="alexandria" id="noFour2" class="choice">Alexandria
 				    </label>
 				    <br>
 				    <br>
@@ -99,9 +103,9 @@
 				    <label id="qFive">
 				    5. What is the capital of Mozambique?
 				        <br>	       
-				        <input type="radio" name="choiceFive" value="moroni" id="noFive1">Moroni<br>
-		  				<input type="radio" name="choiceFive" value="algiers" id="noFive2">Algiers<br>
-		  				<input type="radio" name="choiceFive" value="maputo" id="yesFive">Maputo
+				        <input type="radio" name="choiceFive" value="moroni" id="noFive1" class="choice">Moroni<br>
+		  				<input type="radio" name="choiceFive" value="algiers" id="noFive2" class="choice">Algiers<br>
+		  				<input type="radio" name="choiceFive" value="maputo" id="yesFive" class="choice">Maputo
 				    </label> 
 
 				</form>
